@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CarouselView.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    _carouselController = [[CarouselView alloc] init];
+    
+    self.window.rootViewController = _carouselController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

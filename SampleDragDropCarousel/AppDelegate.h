@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class CarouselView;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    CarouselView *_carouselController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

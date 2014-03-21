@@ -19,6 +19,9 @@
 		8D2805F418DACA560034D4EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2805DC18DACA560034D4EC /* UIKit.framework */; };
 		8D2805FC18DACA560034D4EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D2805FA18DACA560034D4EC /* InfoPlist.strings */; };
 		8D2805FE18DACA560034D4EC /* SampleDragDropCarouselTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2805FD18DACA560034D4EC /* SampleDragDropCarouselTests.m */; };
+		8D28060F18DACAD50034D4EC /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D28060E18DACAD50034D4EC /* iCarousel.m */; };
+		8D28061418DACB110034D4EC /* CarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D28061218DACB110034D4EC /* CarouselView.m */; };
+		8D28061518DACB110034D4EC /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D28061318DACB110034D4EC /* CarouselView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		8D2805F918DACA560034D4EC /* SampleDragDropCarouselTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleDragDropCarouselTests-Info.plist"; sourceTree = "<group>"; };
 		8D2805FB18DACA560034D4EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D2805FD18DACA560034D4EC /* SampleDragDropCarouselTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleDragDropCarouselTests.m; sourceTree = "<group>"; };
+		8D28060D18DACAD50034D4EC /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		8D28060E18DACAD50034D4EC /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		8D28061118DACB110034D4EC /* CarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselView.h; sourceTree = "<group>"; };
+		8D28061218DACB110034D4EC /* CarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselView.m; sourceTree = "<group>"; };
+		8D28061318DACB110034D4EC /* CarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
+		8D28061718DACC2D0034D4EC /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,10 @@
 		8D2805DE18DACA560034D4EC /* SampleDragDropCarousel */ = {
 			isa = PBXGroup;
 			children = (
+				8D28061618DACC2D0034D4EC /* Constants */,
+				8D28061018DACB110034D4EC /* Views */,
+				8D28060B18DACAD50034D4EC /* ExternalLibraries */,
+				8D28060718DACA9B0034D4EC /* Controllers */,
 				8D2805E718DACA560034D4EC /* AppDelegate.h */,
 				8D2805E818DACA560034D4EC /* AppDelegate.m */,
 				8D2805EA18DACA560034D4EC /* Images.xcassets */,
@@ -142,6 +155,48 @@
 				8D2805FA18DACA560034D4EC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D28060718DACA9B0034D4EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D28060B18DACAD50034D4EC /* ExternalLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				8D28060C18DACAD50034D4EC /* iCarousel */,
+			);
+			path = ExternalLibraries;
+			sourceTree = "<group>";
+		};
+		8D28060C18DACAD50034D4EC /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				8D28060D18DACAD50034D4EC /* iCarousel.h */,
+				8D28060E18DACAD50034D4EC /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		8D28061018DACB110034D4EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D28061118DACB110034D4EC /* CarouselView.h */,
+				8D28061218DACB110034D4EC /* CarouselView.m */,
+				8D28061318DACB110034D4EC /* CarouselView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D28061618DACC2D0034D4EC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8D28061718DACC2D0034D4EC /* Constant.h */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +276,7 @@
 			files = (
 				8D2805E318DACA560034D4EC /* InfoPlist.strings in Resources */,
 				8D2805EB18DACA560034D4EC /* Images.xcassets in Resources */,
+				8D28061518DACB110034D4EC /* CarouselView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D28060F18DACAD50034D4EC /* iCarousel.m in Sources */,
 				8D2805E918DACA560034D4EC /* AppDelegate.m in Sources */,
+				8D28061418DACB110034D4EC /* CarouselView.m in Sources */,
 				8D2805E518DACA560034D4EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +495,7 @@
 				8D28060318DACA560034D4EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D28060418DACA560034D4EC /* Build configuration list for PBXNativeTarget "SampleDragDropCarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +504,7 @@
 				8D28060618DACA560034D4EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
